@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Hello world</h1>
-    <small>Hello world</small>
+    <form action="/get-form-data" method="post">
+        <div class="form">
+            <div class="username">
+                <label for="username">Username : </label>
+                <input type="text"
+                placeholder="Enter username"
+                id="username"
+                name="username"
+                >
+                <br>
+                <br>
+            </div>
+
+            <div class="email">
+                <label for="email">Email : </label>
+                <input type="email"
+                placeholder="Enter email"
+                id="email"
+                name="email"
+                >
+                <br>
+                <br>
+            </div>
+
+            <div class="password">
+                <label for="pass">Password : </label>
+                <input type="password"
+                placeholder="Enter Password"
+                id="pass"
+                name="password"
+                >
+                <br>
+                <br>
+            </div>
+
+            <button>Submit Data</button>
+        
+        </div>
+    </form>
+    <script src="index.js"></script>
 </body>
 </html>

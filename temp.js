@@ -10,10 +10,10 @@ app.set("view engine", "ejs");
 
 
 //This is middle ware which is a function that can executes before sending response on any request and at last we need to return next
-app.use((req, res, next)=>{
-    console.log("This is middle ware");
-    return next()
-})
+// app.use((req, res, next)=>{
+//     console.log("This is middle ware");
+//     return next()
+// })
 
 app.get("/",(req, res)=>{
     res.render('index');
